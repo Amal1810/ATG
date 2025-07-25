@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ATG E-HUB</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EHUB | eFootball Player Stats</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <img src="logo.png" alt="ATG Logo" width="80">
-   <h1>ATG E-HUB</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="training.html">Training</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <!-- Hero / Home Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to EHUB</h1>
+      <p>Track your favourite eFootball players & their progression in style!</p>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Welcome to ATG E-HUB</h2>
-      <p>Your ultimate destination for eFootball training, news, and guides.</p>
-    </section>
+  <!-- Featured Player on Home -->
+  <section class="featured-player">
+    <h2>Featured Player</h2>
+    <div class="player-card">
+      <div class="avatar">🤖</div>
+      <div class="details">
+        <h3>PLAYER NAME</h3>
+        <ul>
+          <li>Goals: 24</li>
+          <li>Assists: 12</li>
+          <li>Rating: 88</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h3>Latest News</h3>
-      <ul>
-        <li>📰 Ronaldo Card Update Coming</li>
-        <li>🧠 New AI Patch – Tweaks Explained</li>
-        <li>🆕 Summer Event Rumors & Predictions</li>
-      </ul>
-    </section>
-  </main>
+  <!-- Player Progression Section -->
+  <section class="progression">
+    <h2>Player Progression</h2>
+    <table>
+      <thead>
+        <tr><th>Match</th><th>Rating</th><th>Goals</th><th>Assists</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Match 1</td><td>85</td><td>1</td><td>0</td></tr>
+        <tr><td>Match 2</td><td>89</td><td>2</td><td>1</td></tr>
+        <!-- More rows -->
+      </tbody>
+    </table>
+  </section>
 
   <footer>
-    <p>Contact: contact@atgehub.com</p>
+    <p>© 2025 EHUB. Powered by football passion.</p>
   </footer>
 
 </body>
