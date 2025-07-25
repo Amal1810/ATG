@@ -5,6 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=.75">
   <title>ATG E-HUB</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #1c1c1c;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card p {
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+
+  @media (max-width: 600px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 90%;
+    }
+  }
+</style>
+
 </head>
 <body>
 
