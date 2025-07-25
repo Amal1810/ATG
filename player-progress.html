@@ -5,6 +5,72 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Player Progression</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .back-btn {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .chart-container {
+      width: 90%;
+      max-width: 600px;
+      margin: auto;
+    }
+  </style>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <a href="index.html" class="back-btn">⬅ Back to Home</a>
+  <h1>Player Progression</h1>
+
+  <div class="chart-container">
+    <canvas id="progressChart"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('progressChart').getContext('2d');
+    const progressChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Speed', 'Dribbling', 'Passing', 'Shooting', 'Stamina'],
+        datasets: [{
+          label: 'Player Growth',
+          data: [78, 85, 72, 90, 88],
+          backgroundColor: '#4CAF50'
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
+
   <h1>Player Progression</h1>
   <p>This is where you can add content about how players level up, their ratings, training tips, etc.</p>
   <a href="index.html">← Back to Home</a>
