@@ -1,77 +1,35 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: #222;
-  background: #f9f9f9;
-}
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
 
-.hero {
-  background: linear-gradient(135deg, #00b3b3 0%, #006d6d 100%);
-  padding: 60px 20px;
-  text-align: center;
-  color: white;
-}
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5em;
-}
-.hero p {
-  font-size: 1.25rem;
-}
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
 
-.featured-player {
-  padding: 40px 20px;
-  text-align: center;
-}
-.player-card {
-  display: inline-flex;
-  align-items: center;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 20px;
-}
-.avatar {
-  font-size: 4rem;
-  margin-right: 20px;
-}
-.details h3 {
-  margin: 0;
-  font-size: 1.75rem;
-}
-.details ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-}
-.details li {
-  font-size: 1rem;
-}
+  header img {
+    max-width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
 
-.progression {
-  padding: 40px 20px;
-}
-.progression h2 {
-  margin-bottom: 10px;
-}
-.progression table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.progression th, .progression td {
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: center;
-}
-.progression th {
-  background-color: #00b3b3;
-  color: white;
-}
+  header h1 {
+    font-size: 1.5em;
+  }
 
-footer {
-  padding: 20px;
-  background: #222;
-  color: #ddd;
-  text-align: center;
-  font-size: 0.9rem;
-}
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    header img {
+      margin-bottom: 10px;
+    }
+  }
+</style>
