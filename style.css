@@ -85,7 +85,7 @@ header {
   font-size: 18px;
 }
 body {
-  background-image: url('images/good-morning.png');
+  background-image: url('good-morning.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
